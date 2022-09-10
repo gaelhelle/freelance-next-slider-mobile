@@ -29,6 +29,7 @@ const Slider = (props: Props) => {
         onChange={(res) => {
           setSlideIndex(res);
         }}
+        emulateTouch={true}
       >
         {data.map((slider, i) => (
           <SliderContent
