@@ -1,9 +1,14 @@
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
-import { SliderData } from "../pages";
 import styles from "./Slider.module.css";
 import "react-responsive-carousel/lib/styles/carousel.css";
 import { useState } from "react";
+
+type SliderData = {
+  title: string;
+  description: string;
+  imageUrl: string;
+};
 
 type Props = {
   data: SliderData[];
